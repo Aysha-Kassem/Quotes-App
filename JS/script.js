@@ -24,7 +24,6 @@ quotes = [
 ]
 
 let lastIndex = -1;
-
 function getRandomQuote() {
     let randomIndex;
     do {
@@ -34,3 +33,8 @@ function getRandomQuote() {
     lastIndex = randomIndex;
     document.getElementById("quote").innerHTML = quotes[randomIndex];
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    getRandomQuote();
+});
